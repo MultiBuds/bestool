@@ -6,10 +6,10 @@
 rustPlatform.buildRustPackage {
   name = "bestool";
 
-  src = lib.cleanSource ./bestool;
+  src = lib.cleanSource ./.;
 
   cargoLock = {
-    lockFile = ./bestool/Cargo.lock;
+    lockFile = ./Cargo.lock;
     allowBuiltinFetchGit = true;
   };
 
